@@ -1,0 +1,23 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="header">
+      <h1>Mi Portfolio</h1>
+      <p>Explora algunos de mis proyectos destacados.</p>
+    </div>
+    <section class="portfolio">
+      <div *ngFor="let project of projects" class="project-card" data-aos="zoom-in-up">
+        <a [routerLink]="['/project', project.id]" class="project-link">
+          <img [src]="project.image" [alt]="project.title" class="project-image">
+          <div class="project-info">
+            <h2 class="project-title">{{ project.title }}</h2>
+            <p class="project-description">{{ project.description }}</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+
+  

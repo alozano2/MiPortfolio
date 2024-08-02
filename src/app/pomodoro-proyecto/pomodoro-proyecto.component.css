@@ -1,0 +1,67 @@
+/* Estilos para project-details */
+.project-details {
+  padding: 20px;
+  background-color: #787B7D;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-title {
+    font-size: 2.5em;
+    color: #FFFFFF;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.screenshots {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.screenshot-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.screenshot-content:hover {
+  transform: scale(1.05);
+}
+
+.project-image {
+    max-width: 70%;
+    max-height: 350px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    margin-right: 20px;
+}
+
+.screenshot-description {
+  font-size: 1em;
+  color: #FFFF;
+}
+
+@media (max-width: 768px) {
+  .screenshot-content {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .screenshot-content {
+    flex: 1 1 100%;
+  }
+}

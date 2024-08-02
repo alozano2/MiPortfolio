@@ -1,0 +1,81 @@
+.project-details {
+  padding: 20px;
+  background: ('assets/images/productime_logo.png');
+  background-size: cover;
+  animation: none; 
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-title {
+  font-size: 2.5em;
+  color: #333;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.project-title::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 4px;
+  background: #2b98cf;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+.screenshots {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.screenshot-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.project-image {
+  max-width: 70%;
+  max-height: 350px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  margin-right: 20px;
+}
+
+.white-text { color: #FFFFFF; }
+.default-text { color: #000000; }
+
+.screenshot-description {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+  font-family: 'Merriweather', serif;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .screenshot-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .project-image {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

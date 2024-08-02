@@ -1,0 +1,21 @@
+<div [ngClass]="backgroundClass" class="project-details">
+  <div class="container">
+    <div class="project-header">
+      <h1 class="project-title">Mi Perfil</h1>
+    </div>
+    <div class="screenshots" >
+      <div *ngFor="let screenshot of screenshots" class="screenshot-content">
+        <img
+          [src]="screenshot.imgSrc"
+          [alt]="screenshot.alt"
+          class="project-image" data-aos="flip-left" data-aos-delay="200"
+        />
+        <p
+          [ngClass]="textColorClass"
+          class="screenshot-description"
+          [innerHTML]="screenshot.description"
+        ></p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="project-details">
+  <div class="container">
+    <div class="project-header">
+      <h1 class="project-title">Iniciar Sesión</h1>
+    </div>
+    <div class="screenshots">
+      <div class="screenshot" *ngFor="let screenshot of screenshots">
+        <div class="screenshot-content">
+          <img [src]="screenshot.imgSrc" [alt]="screenshot.alt" class="project-image">
+          <p [ngClass]="textColorClass" class="screenshot-description">{{ screenshot.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

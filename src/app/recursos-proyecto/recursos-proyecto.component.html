@@ -1,0 +1,23 @@
+<div [ngClass]="backgroundClass" class="project-details">
+  <div class="container">
+    <div class="project-header">
+      <h1 class="project-title">Recursos</h1>
+    </div>
+    <div class="screenshots">
+      <div *ngFor="let screenshot of screenshots; let i = index"
+           class="screenshot-content"
+           [attr.data-aos]="i % 2 === 0 ? 'fade-right' : 'fade-left'"
+           [attr.data-aos-delay]="screenshot.delay">
+        <img [src]="screenshot.imgSrc" [alt]="screenshot.alt" class="project-image" />
+        <p [ngClass]="textColorClass" class="screenshot-description" [innerHTML]="screenshot.description"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  
+  
+
+

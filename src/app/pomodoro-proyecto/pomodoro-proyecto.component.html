@@ -1,0 +1,13 @@
+<div [ngClass]="backgroundClass" class="project-details">
+    <div class="container">
+        <div class="project-header">
+            <h1 class="project-title">Pomodoro</h1>
+          </div>
+      <div class="screenshots" data-aos="zoom-out" data-aos-delay="200">
+        <div *ngFor="let screenshot of screenshots" class="screenshot-content">
+          <img [src]="screenshot.imgSrc" [alt]="screenshot.alt" class="project-image" />
+          <p [ngClass]="textColorClass" class="screenshot-description" [innerHTML]="screenshot.description"></p>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,80 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-white {
+    background-color: white;
+    display: inline-block; /* Ajusta el contenedor al tamaño del contenido */
+    padding: 0.5rem; /* Padding opcional para dar espacio interno */
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: auto; /* Centra el recuadro horizontalmente */
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mt-4 {
+    margin-top: 1rem; /* Espacio superior opcional */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem; /* Espacio inferior opcional */
+}
+
+.text-lg {
+    font-size: 1.125rem; /* Tamaño de fuente opcional */
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-gray-800 {
+    color: #2d3748;
+}
+
+.text-gray-700 {
+    color: #4a5568;
+}
+
+.text-blue-500 {
+    color: #4299e1;
+}
+
+.text-blue-500:hover {
+    text-decoration: underline;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Ajustes para mostrar los elementos uno al lado del otro */
+section.flex {
+    display: flex;
+    flex-direction: row; /* Alinea los elementos horizontalmente */
+    gap: 1rem; /* Espacio entre los elementos */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Espacio entre el ícono y el texto */
+}
+
+.about-section {
+    padding: 1rem; /* Espacio interno opcional */
+    background-color: #030F2B;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
